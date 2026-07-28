@@ -1,0 +1,400 @@
+/* ==========================================================
+   TEXTILE STOCK MANAGEMENT SYSTEM
+   FORMS.CSS
+   Professional Form Controls
+   ========================================================== */
+
+/* ==========================================================
+   FORM CONTAINER
+   ========================================================== */
+
+.form-card {
+  background: var(--bg-card);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  backdrop-filter: blur(18px);
+
+  box-shadow: var(--shadow);
+}
+
+/* ==========================================================
+   LABELS
+   ========================================================== */
+
+label,
+.form-label {
+  display: block;
+
+  color: #ffffff;
+
+  font-weight: 600;
+
+  margin-bottom: 8px;
+
+  letter-spacing: 0.3px;
+}
+
+/* ==========================================================
+   INPUTS
+   ========================================================== */
+
+.form-control,
+.form-select {
+  width: 100%;
+
+  height: 52px;
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  background: rgba(255, 255, 255, 0.05);
+
+  color: #ffffff;
+
+  padding: 0 18px;
+
+  transition: all 0.3s ease;
+
+  font-size: 15px;
+}
+
+.form-control:hover,
+.form-select:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-control:focus,
+.form-select:focus {
+  outline: none;
+
+  border-color: var(--accent);
+
+  background: rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #94a3b8;
+}
+
+/* ==========================================================
+   DATE INPUT
+   ========================================================== */
+
+input[type="date"] {
+  color: #ffffff;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+
+  cursor: pointer;
+}
+
+/* ==========================================================
+   NUMBER INPUT
+   ========================================================== */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+/* ==========================================================
+   TEXTAREA
+   ========================================================== */
+
+textarea.form-control {
+  min-height: 140px;
+
+  resize: vertical;
+
+  padding: 15px;
+}
+
+/* ==========================================================
+   INPUT GROUP
+   ========================================================== */
+
+.input-group {
+  border-radius: 14px;
+
+  overflow: hidden;
+}
+
+.input-group-text {
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: #ffffff;
+}
+
+/* ==========================================================
+   SEARCH BOX
+   ========================================================== */
+
+.search-box {
+  position: relative;
+}
+
+.search-box i {
+  position: absolute;
+
+  left: 18px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #94a3b8;
+}
+
+.search-box input {
+  padding-left: 50px;
+}
+
+/* ==========================================================
+   CHECKBOX
+   ========================================================== */
+
+.form-check-input {
+  width: 20px;
+
+  height: 20px;
+
+  cursor: pointer;
+
+  background-color: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.form-check-input:checked {
+  background-color: var(--accent);
+
+  border-color: var(--accent);
+}
+
+.form-check-label {
+  margin-left: 6px;
+
+  color: #ffffff;
+}
+
+/* ==========================================================
+   RADIO
+   ========================================================== */
+
+.form-check-input[type="radio"] {
+  border-radius: 50%;
+}
+
+/* ==========================================================
+   SWITCH
+   ========================================================== */
+
+.form-switch .form-check-input {
+  width: 50px;
+
+  height: 26px;
+}
+
+.form-switch .form-check-input:checked {
+  background-color: var(--accent);
+}
+
+/* ==========================================================
+   FILE INPUT
+   ========================================================== */
+
+.form-control[type="file"] {
+  padding: 10px;
+}
+
+.form-control[type="file"]::file-selector-button {
+  background: var(--accent);
+
+  color: #fff;
+
+  border: none;
+
+  padding: 8px 16px;
+
+  border-radius: 10px;
+
+  margin-right: 15px;
+
+  cursor: pointer;
+}
+
+/* ==========================================================
+   FORM ROW
+   ========================================================== */
+
+.form-row {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 20px;
+}
+
+/* ==========================================================
+   FORM ACTIONS
+   ========================================================== */
+
+.form-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 15px;
+
+  margin-top: 30px;
+
+  flex-wrap: wrap;
+}
+
+/* ==========================================================
+   VALIDATION
+   ========================================================== */
+
+.is-valid {
+  border-color: #22c55e !important;
+}
+
+.is-invalid {
+  border-color: #ef4444 !important;
+}
+
+.valid-feedback {
+  color: #22c55e;
+
+  margin-top: 6px;
+}
+
+.invalid-feedback {
+  color: #ef4444;
+
+  margin-top: 6px;
+}
+
+/* ==========================================================
+   SELECT OPTIONS
+   ========================================================== */
+
+select option {
+  background: #102543;
+
+  color: #ffffff;
+}
+
+/* ==========================================================
+   FLOATING LABEL
+   ========================================================== */
+
+.form-floating > .form-control,
+.form-floating > .form-select {
+  background: rgba(255, 255, 255, 0.05);
+
+  color: #fff;
+}
+
+.form-floating > label {
+  color: #94a3b8;
+}
+
+/* ==========================================================
+   READ ONLY
+   ========================================================== */
+
+.form-control:disabled,
+.form-control[readonly] {
+  background: rgba(255, 255, 255, 0.03);
+
+  color: #cbd5e1;
+}
+
+/* ==========================================================
+   RANGE
+   ========================================================== */
+
+.form-range::-webkit-slider-thumb {
+  background: var(--accent);
+}
+
+.form-range::-moz-range-thumb {
+  background: var(--accent);
+}
+
+/* ==========================================================
+   FORM SECTION
+   ========================================================== */
+
+.form-section {
+  margin-bottom: 35px;
+}
+
+.form-section-title {
+  font-size: 20px;
+
+  font-weight: 700;
+
+  color: #fff;
+
+  margin-bottom: 20px;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ==========================================================
+   REQUIRED STAR
+   ========================================================== */
+
+.required {
+  color: #ef4444;
+
+  margin-left: 3px;
+}
+
+/* ==========================================================
+   HELP TEXT
+   ========================================================== */
+
+.form-text {
+  color: #94a3b8;
+
+  margin-top: 6px;
+
+  font-size: 13px;
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 768px) {
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

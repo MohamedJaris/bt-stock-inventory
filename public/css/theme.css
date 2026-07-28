@@ -1,0 +1,709 @@
+/* ===========================================================
+   TEXTILE STOCK MANAGEMENT SYSTEM
+   Theme CSS
+   =========================================================== */
+
+/* ==============================
+   Google Font
+============================== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+/* ==============================
+   Root Variables
+============================== */
+
+:root {
+  --bg-primary: #07111f;
+
+  --bg-secondary: #0d1b2a;
+
+  --bg-card: rgba(255, 255, 255, 0.06);
+
+  --bg-card-hover: rgba(255, 255, 255, 0.1);
+
+  --nav-bg: rgba(7, 17, 31, 0.9);
+
+  --accent: #2563eb;
+
+  --accent-hover: #3b82f6;
+
+  --success: #22c55e;
+
+  --warning: #f59e0b;
+
+  --danger: #ef4444;
+
+  --info: #06b6d4;
+
+  --text: #ffffff;
+
+  --text-light: #d8dee9;
+
+  --text-muted: #94a3b8;
+
+  --border: rgba(255, 255, 255, 0.1);
+
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+
+  --shadow-hover: 0 20px 60px rgba(0, 0, 0, 0.45);
+
+  --radius: 16px;
+
+  --transition: 0.3s ease;
+}
+
+/* ==============================
+   Reset
+============================== */
+
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+
+  color: var(--text);
+
+  background: radial-gradient(circle at top left, #17335c 0%, transparent 40%),
+    radial-gradient(circle at bottom right, #11294d 0%, transparent 40%),
+    linear-gradient(135deg, #07111f, #0d1b2a, #102543);
+
+  background-attachment: fixed;
+
+  min-height: 100vh;
+}
+
+/* ==============================
+   Typography
+============================== */
+
+h1 {
+  font-size: 2.5rem;
+
+  font-weight: 800;
+
+  color: white;
+}
+
+h2 {
+  font-size: 2rem;
+
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.6rem;
+
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.3rem;
+
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.1rem;
+
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1rem;
+
+  font-weight: 600;
+}
+
+p {
+  color: var(--text-light);
+
+  line-height: 1.7;
+}
+
+small {
+  color: var(--text-muted);
+}
+
+/* ==============================
+   Links
+============================== */
+
+a {
+  color: white;
+
+  text-decoration: none;
+
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* ==============================
+   Selection
+============================== */
+
+::selection {
+  background: var(--accent);
+
+  color: white;
+}
+
+/* ==============================
+   Scroll Bar
+============================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08111d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #315bba;
+
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f7ee9;
+}
+
+/* ==============================
+   Horizontal Line
+============================== */
+
+hr {
+  border: none;
+
+  height: 1px;
+
+  background: var(--border);
+
+  margin: 25px 0;
+}
+
+/* ==============================
+   Glass Card
+============================== */
+
+.glass {
+  background: var(--bg-card);
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius);
+
+  box-shadow: var(--shadow);
+}
+
+/* ==============================
+   Section Title
+============================== */
+
+.page-title {
+  font-size: 2.4rem;
+
+  font-weight: 800;
+
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  color: var(--text-muted);
+
+  font-size: 1rem;
+}
+
+/* ==============================
+   Gradient Text
+============================== */
+
+.gradient-text {
+  background: linear-gradient(90deg, #4f8fff, #82b1ff);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==============================
+   Utility Classes
+============================== */
+
+.text-white {
+  color: white !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+.text-danger {
+  color: var(--danger) !important;
+}
+
+.text-warning {
+  color: var(--warning) !important;
+}
+
+.text-info {
+  color: var(--info) !important;
+}
+
+/* ==============================
+   Background Utilities
+============================== */
+
+.bg-glass {
+  background: var(--bg-card);
+}
+
+.bg-primary-dark {
+  background: var(--bg-primary);
+}
+
+.bg-secondary-dark {
+  background: var(--bg-secondary);
+}
+
+/* ==============================
+   Spacing Helpers
+============================== */
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.py-60 {
+  padding-top: 60px;
+
+  padding-bottom: 60px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+/* ==============================
+   Rounded
+============================== */
+
+.rounded-xl {
+  border-radius: 20px;
+}
+
+/* ==============================
+   Shadows
+============================== */
+
+.shadow-soft {
+  box-shadow: var(--shadow);
+}
+
+.shadow-hover:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+/* ==============================
+   Containers
+============================== */
+
+.main-container {
+  width: min(1400px, 95%);
+
+  margin: auto;
+}
+
+/* ==============================
+   Fade Background Glow
+============================== */
+
+body::before {
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background: radial-gradient(
+      circle at 10% 20%,
+
+      rgba(37, 99, 235, 0.18),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+
+      rgba(59, 130, 246, 0.12),
+      transparent 30%
+    );
+
+  z-index: -1;
+}
+
+/* ==============================
+   Badge
+============================== */
+
+.badge-modern {
+  padding: 8px 16px;
+
+  border-radius: 50px;
+
+  background: rgba(37, 99, 235, 0.18);
+
+  color: white;
+
+  font-weight: 600;
+}
+
+/* ==============================
+   Cursor
+============================== */
+
+.pointer {
+  cursor: pointer;
+}
+
+/* ==============================
+   Images
+============================== */
+
+img {
+  max-width: 100%;
+}
+
+/* ==============================
+   Bootstrap Overrides
+============================== */
+
+.table {
+  color: white;
+}
+
+.modal-content {
+  background: #13243d;
+
+  color: white;
+
+  border-radius: 18px;
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-footer {
+  border-top: 1px solid var(--border);
+}
+
+.toast {
+  border: none;
+
+  border-radius: 15px;
+}
+
+.form-control,
+.form-select {
+  color: white;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.form-control::placeholder {
+  color: #9aa7bb;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background: rgba(255, 255, 255, 0.08);
+
+  color: white;
+
+  border-color: var(--accent);
+
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+}
+
+.dropdown-menu {
+  background: #162a47;
+
+  border: none;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background: #2956af;
+}
+
+.btn-close {
+  filter: invert(1);
+}
+
+/* ===================================================
+   PAGE NAVIGATION
+=================================================== */
+
+.page-content{
+    padding-top:20px;
+    padding-bottom:40px;
+}
+
+/* Home Button */
+
+.page-nav{
+    margin:25px 0 20px 25px;
+}
+
+.page-nav .btn{
+    padding:12px 22px;
+    border-radius:14px;
+    font-weight:600;
+    color:#fff !important;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+/* Bottom Navigation */
+
+.next-button{
+    display:flex;
+    justify-content:flex-end;
+
+    margin-top:40px;
+    margin-bottom:30px;
+    padding-right:25px;
+}
+
+.next-button .btn{
+    min-width:240px;
+
+    padding:14px 28px;
+
+    border-radius:14px;
+
+    font-weight:600;
+
+    color:#fff !important;
+    text-decoration:none;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    transition:.3s;
+}
+
+.next-button .btn:hover{
+    transform:translateY(-3px);
+}
+
+/* Keep all button text white */
+
+.btn,
+.btn:link,
+.btn:visited,
+.btn:hover,
+.btn:active,
+.btn:focus{
+    color:#fff !important;
+}
+
+/* =====================================
+   MODERN TABLE
+===================================== */
+
+.table-container{
+    background: rgba(255,255,255,.95);
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+    overflow:hidden;
+}
+
+.table{
+    margin-bottom:0;
+    background:#ffffff;
+}
+
+/* Header */
+
+.table thead{
+    background:#1e3a8a;
+}
+
+.table thead th{
+    background:#1e3a8a !important;
+    color:#ffffff !important;
+    font-weight:700;
+    text-align:center;
+    border:1px solid #dee2e6;
+    padding:15px;
+}
+
+/* Body */
+
+.table tbody td{
+    color:#212529 !important;
+    background:#ffffff;
+    border:1px solid #dee2e6;
+    vertical-align:middle;
+    padding:14px;
+}
+
+.table tbody tr:nth-child(even){
+    background:#f8fafc;
+}
+
+.table tbody tr:nth-child(even) td{
+    background:#f8fafc;
+}
+
+.table tbody tr:hover td{
+    background:#eaf3ff;
+}
+
+/* Bootstrap overrides */
+
+.table-bordered>:not(caption)>*>*{
+    border-color:#dee2e6;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>*{
+    color:#212529;
+}
+
+.table-hover>tbody>tr:hover>*{
+    color:#212529;
+}
+
+/* Remove Bootstrap colours */
+
+.table-bordered>:not(caption)>*>*{
+    border-color:rgba(255,255,255,.08);
+}
+
+/* =====================================
+   TEXT COLORS OUTSIDE TABLES
+===================================== */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+p,
+span,
+small,
+a,
+.card,
+.card-body,
+.card-header,
+.form-label{
+    color:#ffffff;
+}
+
+/* Inputs */
+
+.form-control,
+.form-select{
+    color:#ffffff;
+}
+
+/* Dropdown items */
+
+.form-select option{
+    color:#000000;
+    background:#ffffff;
+}
+
+/* =====================================
+   DARK FORM CARDS
+===================================== */
+
+.card{
+    background: rgba(14, 23, 42, 0.92) !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.25);
+}
+
+.card-body{
+    background: transparent !important;
+    color: #ffffff;
+}
+
+.card-header{
+    background: rgba(255,255,255,0.05) !important;
+    color: #ffffff !important;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+/* Labels */
+
+.form-label{
+    color:#ffffff !important;
+    font-weight:600;
+}
+
+/* Inputs */
+
+.form-control,
+.form-select{
+    background:#0f172a !important;
+    color:#ffffff !important;
+    border:1px solid rgba(255,255,255,.18) !important;
+}
+
+.form-control:focus,
+.form-select:focus{
+    background:#16213e !important;
+    color:#ffffff !important;
+    border-color:#3b82f6 !important;
+    box-shadow:0 0 0 .2rem rgba(59,130,246,.25);
+}
+
+.form-control::placeholder{
+    color:#94a3b8 !important;
+}
+
+.form-select option{
+    background:#0f172a;
+    color:#ffffff;
+}
