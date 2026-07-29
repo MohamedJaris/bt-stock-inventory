@@ -126,6 +126,10 @@ async function startServer() {
 
     const PORT = process.env.PORT || 3000;
 
+    app.get("/",(req,res)=>{
+      res.send("Hello");
+    })
+
     app.listen(PORT, () => {
       console.log("--------------------------------");
       console.log("🚀 Textile Stock Management Started");
